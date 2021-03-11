@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles/topnav.css">
     <style>
 body{
     text-align: center;
@@ -30,7 +31,7 @@ input[type=text], select{
             border-radius: 5px;
             background-color: #f2f2f2;
             padding: 20px;
-            margin-top: 10%;
+            margin-top: 0%;
             margin-left: 10%;
             margin-right: 10%;
 
@@ -60,6 +61,22 @@ color: black;
     </style>
 </head>
 <body>
+    <div class="topnav">
+        <h1><span class="header-border">Stay Wild Stay Juicy</span></h1>
+        <ul>
+    <li><a class="#home" href="index.html">Home</a></li>
+    <li><a class="#about" href="About.html">About</a></li>
+    <li><a class="#laws" href="laws.html">Laws</a></li>
+    <li><a class="#videos" href="videos.html">Videos</a></li>
+    <li><a class="#gurus" href="gurus.html">Gurus</a></li>
+    <div class="dropdown">
+        <li><button class="dropbtn">More<i class="fa fa-caret-down"></i></button></li>
+            <div class="dropdown-content">
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+            </div>
+    </div>
+    </ul>
     <h1>Contact</h1>
     <div class="container">
         <form action="action_page.html">
@@ -74,10 +91,6 @@ color: black;
             <input type="submit" value="submit"></p>
         </form>
     </div>
-        <div class="footer">
-            <a href="contact.html">Contact</a>
-            <a href="about.html">About</a>
-        </div>
 
 </body>
 </html>

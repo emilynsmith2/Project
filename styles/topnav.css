@@ -34,7 +34,12 @@ ul{
     width: 900px;
     border: white;
 }
-
+h1{
+    text-align: center;
+}
+img{
+    margin-top: 30px
+}
 .dropdown{
     float: left;
     overflow: hidden;
@@ -69,4 +74,7 @@ button{
 }
 .dropdown:hover .dropdown-content{
     display: block;
+}
+a:active{
+    background-color: cadetblue;
 }

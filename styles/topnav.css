@@ -75,6 +75,6 @@ button{
 .dropdown:hover .dropdown-content{
     display: block;
 }
-a:active{
+a.active{
     background-color: cadetblue;
 }

@@ -7,6 +7,7 @@
 }
 
 .topnav a{
+    list-style-type: none;
     float: left;
     font-family: 'Courier New', Courier, monospace;
     color: black;
@@ -25,7 +26,7 @@
     background-color: white;
     color: black;
 }
-ul{
+#header{
     display: inline-block;
     text-align: center;
     list-style-type: none;

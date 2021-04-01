@@ -96,6 +96,14 @@
         .dropdown:hover .dropdown-content{
             display: block;
         }
+        #pic{
+            width: 650px;
+            height: 370px;
+        }
+        h3{
+            padding-top: 10px;
+        }
+        
     </style>
 </head>
 <body>
@@ -116,29 +124,31 @@
                 </div>
         </div>
         </ul>
+<h3>Learn how to cultivate your mind and cultivate the Earth</h3>
+      <!-- <img src="images/wildhomepage.jpg" alt="Abel Tasman National Park" title="New Zealand" width="650px">-->
+   <img id="pic"/>
 
-       <img src="images/wildhomepage.jpg" alt="Abel Tasman National Park" title="New Zealand" width="650px">
-   <!-- <img id="pic"/>
+   <p>From the foods we eat to the thoughts we think we are always encountering vibrations. </p>
     <script>
         const slides=[
-            "images/wildfood.jpg",
             "images/moregrub.jpg",
+            "images/chakara.png",
             "images/shroomy.jpg",
-            "images/wildhomepage.jpg",
             "images/foragingbloobs.jpg",
+            "images/hc.png",
         ];
         let i=0; 
         function slideShow() {
-            console.log(..."a new image"...)
+            console.log("a new image")
             let homePage= document.getElementById("pic");
             if (i === slides.length) {
                 i=0;
             }
             homePage.src= slides [i]; 
             i++;
-            setTimeout (slideShow, 1000);
+            setTimeout (slideShow, 3000);
         }
         document.querySelector("body").onload=slideShow;
-    </script>-->
+    </script>
 </body>
 </html>

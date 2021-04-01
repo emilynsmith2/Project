@@ -6,7 +6,7 @@
     text-align: center;
 }
 
-.topnav{
+.topnav a{
     list-style-type: none;
     float: left;
     font-family: 'Courier New', Courier, monospace;

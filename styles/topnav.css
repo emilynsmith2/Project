@@ -3,13 +3,13 @@
     overflow: hidden;
     top: 0;
     width: 100%;
-    text-align: center;
+
 }
 li.topnav{
     display: inline;
     float: left;
 }
-a.topnav{
+.topnav a{
     list-style-type: none;
     float: left;
     font-family: 'Courier New', Courier, monospace;
@@ -20,12 +20,12 @@ a.topnav{
     font-size: 17pt;
 }
 
-a.topnav:hover{
+.topnav a:hover{
     background-color: #ddd;
     color: black;
 }
 
- a.topnav:active{
+ .topnav a:active{
     background-color: white;
     color: black;
 }

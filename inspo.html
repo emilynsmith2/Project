@@ -48,18 +48,18 @@
     <h1 id="inspo" class="smaller">Inspiration</h1>
 <table>
     <tr>
-        <td><img src="images/pic1.png" alt="vibes" title="Vibes" width="400"/></td>
-        <td><img src="images/pic2.png" alt="journey" title="The Journey" width="400"/></td>
-        <td><img src="images/pic10.png" alt="if i am" title="If I Am" width="400"/></td>
+        <td><img src="images/pic1.png" alt="vibes" title="Vibes" width="400" /></td>
+        <td><img src="images/pic2.png" alt="journey" title="The Journey" width="400" /></td>
+        <td><img src="images/pic10.png" alt="if i am" title="If I Am" width="400" /></td>
     </tr>
     <tr>
         <td><img src="images/pic3.png" alt="self love" title="Self Love" width="400"/></td>
         <td><img src="images/pic4.png" alt="connections" title="Connections" width="400"/></td>
-        <td><img src="images/pic5.png" alt="touch" title="Power of Touch" width="400"/></td>
+        <td><img src="images/pic5.png" alt="touch" title="Power of Touch" width="400" /></td>
     </tr>
-        <td><img src="images/pic6.png" alt="self-discovery" title="Self-Discovery" width="400"/></td>
-        <td><img src="images/pic7.png" alt="soul elements" title="Soul Elements" width="400"/></td>
-        <td><img src="images/pic9.png" alt="perfection" title="Perfection" width="400"/></td>
+        <td><img src="images/pic6.png" alt="self-discovery" title="Self-Discovery" width="400" /></td>
+        <td><img src="images/pic7.png" alt="soul elements" title="Soul Elements" width="400" /></td>
+        <td><img src="images/pic9.png" alt="perfection" title="Perfection" width="400" /></td>
     </tr>
 </table>
 
@@ -68,25 +68,29 @@
     function enlarge (i) {
         console.log(i);
         let w=i.width;
+     //   let h=i.height;
         console.log (w);
-        w= w*1.5;
+        w= w*.5;
+     //   h= h*.5;
+   //     i.style.height= h+"px";
         i.style.width= w + "px";
         console.log (i.width); 
 
-        document.querySelector("h1").innerHTML=i.title; 
+        document.getElementById("inspo").innerHTML=i.title; 
     }
 
     function shrink (i) {
         let w= i.width;
-
-        w=w/1.5;
-
+let h=height;
+        w=w/.5;
+    //h=h/.5;
         i.style.width= w + "px";
+      //  i.style.width=h + "px"; 
 
-        document.querySelector("h1").innerHTML= Inspo;
+        document.getElementById("inspo").innerHTML= Inspo;
     }
 
-    let images= doucmnet.querySelectorAll("img");
+    let images= document.querySelectorAll("img");
     for (let index=0; index < images.length; index++) {
         const element = images [index] ;
         element.addEventListener("mouseover", function (){

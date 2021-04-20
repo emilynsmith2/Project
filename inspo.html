@@ -68,11 +68,37 @@
 
 <script>
     //when i click on an image I want the h1 to change to the title of the image that is clicked
-    function changeTitle(){
-        document.querySelector("img").innerHTML="Stay Wild Stay Juicy";
+    function enlarge (i) {
+        console.log(i);
+        let w=i.width;
+        console.log (w);
+        w= w*1.5;
+        i.style.width= w + "px";
+        console.log (i.width); 
+
+        document.querySelector("h1").innerHTML=i.title; 
     }
 
-document.getElementById("inspo").onmouseover=changeTitle;
+    function shrink (i) {
+        let w= i.width;
+
+        w=w/1.5;
+
+        i.style.width= w + "px";
+
+        document.querySelector("h1").innerHTML= "Stay Wild Stay Juicy";
+    }
+
+    let images= doucmnet.querySelectorAll("img");
+    for (let index=0; index < images.length; index++) {
+        const element = images [index] ;
+        element.addEventListener("mouseover", function (){
+            enlarge(this);
+        });
+        element.addEventListener("mouseout", function (){
+            shrink (this);
+        } );
+    }
 </script>
 
 

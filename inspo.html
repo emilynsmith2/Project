@@ -48,7 +48,7 @@
             </div>
     </div>
     </ul>
-    <h1 class="smaller">Inspiration</h1>
+    <h1 id="inspo" class="smaller">Inspiration</h1>
 <table>
     <tr>
         <td><img src="images/pic1.png" alt="vibes" title="Vibes"/></td>
@@ -65,6 +65,15 @@
         <td><img src="images/pic9.png" alt="perfection" title="Perfection"/></td>
     </tr>
 </table>
+
+<script>
+    //when i click on an image I want the h1 to change to the title of the image that is clicked
+    function changeTitle(){
+        document.querySelector("img").innerHTML="Stay Wild Stay Juicy";
+    }
+
+document.getElementById("inspo").onmouseover=changeTitle;
+</script>
 
 
 

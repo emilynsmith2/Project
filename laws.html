@@ -1,25 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-192769917-1"></script>
-<script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-192769917-1"></script>
+    <script>
 
-window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'UA-192769917-1');
+        gtag('config', 'UA-192769917-1');
 
-</script>
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universe Laws</title>
-    <link rel="stylesheet" href="styles/topnav.css"/>
+
     <style>
-        p{
+        .topnav {
+            background-color: white;
+            overflow: hidden;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            display: block;
+            margin-left: 30%;
+
+        }
+
+        .topnav a {
+            float: left;
+            font-family: 'Courier New', Courier, monospace;
+            color: black;
+            text-align: center;
+            padding: 20px 20px;
+            text-decoration: none;
+            font-size: 17pt;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 17pt;
+            border: none;
+            outline: none;
+            padding: 20px 20px;
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+        }
+
+        .topnav a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: #ddd;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        button {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 15pt;
+            display: inline-block;
+            margin: 0px;
+            background-color: white;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        img {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: 30%;
+        }
+
+        #pic {
+            width: 630px;
+            height: 350px;
+        }
+
+        h3 {
+            padding-top: 10px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        p {
             margin-left: 30%;
             margin-top: 2%;
             border: black;
@@ -27,43 +132,57 @@ window.dataLayer = window.dataLayer || [];
             text-align: center;
         }
 
-      #welcome {
-          border-style: solid black;
-      }
-      .smaller{
-          font-size: 18px;
-      }
+        #welcome {
+            border-style: solid black;
+        }
+
+        .smaller {
+            font-size: 18px;
+        }
     </style>
 </head>
+
 <body>
+    <h1> <span class="header-border">Stay Wild Stay Juicy</span></h1>
     <div class="topnav">
-        <h1><span class="header-border">Stay Wild Stay Juicy</span></h1>
-        <ul id="header">
-    <li><a class="#home" href="index.html">Home</a></li>
-    <li><a class="#about" href="About.html">About</a></li>
-    <li><a class="#laws" href="laws.html">Laws</a></li>
-    <li><a class="#videos" href="videos.html">Videos</a></li>
-    <li><a class="#gurus" href="inspo.html">Inspo</a></li>
-    <div class="dropdown">
-        <li><button class="dropbtn">More<i class="fa fa-caret-down"></i></button></li>
-            <div class="dropdown-content">
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="sitemap.html">Sitemap</a></li>
-                <li><a href="credits.html">Credits</a></li>
+
+        <div id="header">
+            <a class="#home" href="index.html">Home</a>
+            <a class="#about" href="About.html">About</a>
+            <a class="#laws" href="laws.html">Laws</a>
+            <a class="#videos" href="videos.html">Videos</a>
+            <a class="#gurus" href="inspo.html">Inspo</a>
+            <div class="dropdown">
+                <button class="dropbtn">More<i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="contact.html">Contact</a>
+                    <a href="sitemap.html">Sitemap</a>
+                    <a href="credits.html">Credits</a>
+                </div>
+
             </div>
+        </div>
     </div>
-</div>
-    </ul>
     <!-- <p>                <p>There are two principles that have helped me make sense of things: 1. we are all on this planet figuring out life out together 2. The universe operates based on vibrations and frequencies and we are all made up of these frequencies. So we are in the unvierse and the unvierse is in us...When we recognzie that our world operates based on frequencies and vibrations we can see how connected we are to everything #highvibezzbruhhh. But this saying has true meaning. You know when someone is high vibes vs. low vibes.  </p></p> -->
     <h1 class="smaller">Laws of the Universe</h1>
-<P id="welcome">Welcome to the Lawsss of deee Universeeee! It is important to understand these set of laws when cultivating a wild juicy life because it gives you the conscious power to choose how you want to live your life. We live in an energetic universe where everything is both glowing and attracting at all times. From the foods we eat to the thoughts we think we are always encountering vibrations. The laws of the universe are always working whether we are conscious of them or not. Here are a few that resonate the most with me.</P>
-<h1 class="smaller">~ Law of Vibration ~</h1>
-<p>"Everything in the universe has a frequency and a vibration". We have the ability to create the vibrations we want to be. This is the idea of low vibes vs high vibes. The law of vibration can be applied to everything from emotions to the food you are eating. What has a higher vibration Cheetos or an apple? </p>
+    <P id="welcome">Welcome to the Lawsss of deee Universeeee! It is important to understand these set of laws when
+        cultivating a wild juicy life because it gives you the conscious power to choose how you want to live your life.
+        We live in an energetic universe where everything is both glowing and attracting at all times. From the foods we
+        eat to the thoughts we think we are always encountering vibrations. The laws of the universe are always working
+        whether we are conscious of them or not. Here are a few that resonate the most with me.</P>
+    <h1 class="smaller">~ Law of Vibration ~</h1>
+    <p>"Everything in the universe has a frequency and a vibration". We have the ability to create the vibrations we
+        want to be. This is the idea of low vibes vs high vibes. The law of vibration can be applied to everything from
+        emotions to the food you are eating. What has a higher vibration Cheetos or an apple? </p>
     <h1 class="smaller">
-    ~ Law of Attraction ~
-</h1>
-<p>Law of attraction is about cultivating everything you want inside of you to attract it to you. We are constantly creating through our thoughts. Everything happens twice, first in your mind and second in your reality. To gain more abundance, you must be thankful for all the abundance currently in your life.  </p>
-<h1 class="smaller">~ The Law of Relativity ~</h1>
-<p>This law is about seeing beyond good vs bad and understanding the neutrality of things. This law reminds you that there are multiple perspectives on what is happening around you. </p>
+        ~ Law of Attraction ~
+    </h1>
+    <p>Law of attraction is about cultivating everything you want inside of you to attract it to you. We are constantly
+        creating through our thoughts. Everything happens twice, first in your mind and second in your reality. To gain
+        more abundance, you must be thankful for all the abundance currently in your life. </p>
+    <h1 class="smaller">~ The Law of Relativity ~</h1>
+    <p>This law is about seeing beyond good vs bad and understanding the neutrality of things. This law reminds you that
+        there are multiple perspectives on what is happening around you. </p>
 </body>
+
 </html>
